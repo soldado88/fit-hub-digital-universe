@@ -22,21 +22,21 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 border border-white/20">
             <Star className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium">Palestra #1 in Italia</span>
+            <span className="text-sm font-medium">Coach Online #1 in Italia</span>
           </div>
           
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Trasforma il Tuo
+            Il Tuo Coach
             <span className="block bg-gradient-hero bg-clip-text text-transparent">
-              Corpo & Mente
+              Fitness Online
             </span>
           </h1>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Schede personalizzate, piani nutrizionali con dietologa qualificata, 
-            e tutto quello che ti serve per raggiungere i tuoi obiettivi fitness.
+            Coaching personalizzato, consulenze 1-a-1 con personal trainer e dietologa qualificata. 
+            Raggiungi i tuoi obiettivi ovunque tu sia.
           </p>
           
           {/* CTA Buttons */}
@@ -54,16 +54,16 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary">500+</div>
-              <div className="text-white/80 mt-2">Clienti Soddisfatti</div>
+              <div className="text-4xl font-bold text-primary">200+</div>
+              <div className="text-white/80 mt-2">Clienti Online</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-secondary">50+</div>
-              <div className="text-white/80 mt-2">Schede Personalizzate</div>
+              <div className="text-4xl font-bold text-secondary">1-a-1</div>
+              <div className="text-white/80 mt-2">Consulenze Private</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-accent">24/7</div>
-              <div className="text-white/80 mt-2">Supporto Online</div>
+              <div className="text-white/80 mt-2">Supporto WhatsApp</div>
             </div>
           </div>
         </div>

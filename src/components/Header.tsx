@@ -13,17 +13,17 @@ export function Header() {
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-foreground hover:text-primary transition-colors">
+          <a href="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </a>
-          <a href="#prodotti-digitali" className="text-foreground hover:text-primary transition-colors">
+          <a href="/schede-e-diete" className="text-foreground hover:text-primary transition-colors">
             Schede & Diete
           </a>
-          <a href="#prodotti-fisici" className="text-foreground hover:text-primary transition-colors">
-            Prodotti
+          <a href="/consulenze" className="text-foreground hover:text-primary transition-colors">
+            Consulenze
           </a>
-          <a href="#chi-siamo" className="text-foreground hover:text-primary transition-colors">
-            Chi Siamo
+          <a href="/prodotti" className="text-foreground hover:text-primary transition-colors">
+            Prodotti
           </a>
         </nav>
 
