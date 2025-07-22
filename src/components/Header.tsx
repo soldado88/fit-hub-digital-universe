@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex items-center space-x-2">
           <Dumbbell className="w-8 h-8 text-primary" />
           <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            FitLife
+            F&Bfisicalbuilding
           </span>
         </div>
         

@@ -10,15 +10,15 @@ export default function Consulenze() {
     {
       id: 1,
       title: "Consulenza Personal Training",
-      description: "Sessione individuale con personal trainer qualificato per creare il tuo programma di allenamento personalizzato",
-      price: "€60",
-      duration: "60 minuti",
+      description: "Consulenza privata 1-on-1 con personal trainer qualificato",
+      price: "€49",
+      duration: "1 ora",
       type: "Online",
       features: [
         "Analisi del tuo stato fisico attuale", 
         "Creazione piano di allenamento personalizzato",
         "Spiegazione tecnica degli esercizi",
-        "Follow-up via WhatsApp per 1 settimana"
+        "Follow-up via WhatsApp"
       ],
       badge: "Personal Trainer",
       icon: User,
@@ -27,15 +27,15 @@ export default function Consulenze() {
     {
       id: 2,
       title: "Consulenza Nutrizionale",
-      description: "Consulenza privata con dietologa nutrizionista certificata nel suo studio professionale",
-      price: "€80",
-      duration: "90 minuti", 
-      type: "In Studio / Online",
+      description: "Consulenza privata 1-on-1 con dietologa nutrizionista nel suo studio",
+      price: "€49",
+      duration: "1 ora", 
+      type: "In Studio",
       features: [
         "Anamnesi alimentare completa",
         "Piano nutrizionale personalizzato", 
         "Educazione alimentare",
-        "Follow-up mensile incluso"
+        "Follow-up professionale"
       ],
       badge: "Dietologa Certificata",
       icon: Stethoscope,

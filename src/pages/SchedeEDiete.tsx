@@ -9,32 +9,32 @@ export default function SchedeEDiete() {
   const products = [
     {
       id: 1,
-      title: "Scheda Forza Avanzata",
-      description: "Programma completo di 12 settimane per aumentare forza e massa muscolare",
-      price: "€29.99",
-      features: ["12 settimane di allenamento", "Video esercizi", "Tracking progressi", "Supporto WhatsApp"],
-      badge: "Più Venduto",
-      icon: Trophy,
+      title: "Protocollo Base",
+      description: "Per chi inizia - programma pensato per principianti",
+      price: "€25",
+      features: ["6 settimane di allenamento", "3 giorni a settimana", "Tracking progressi", "Supporto WhatsApp"],
+      badge: "Principianti",
+      icon: Users,
       color: "primary"
     },
     {
       id: 2,
-      title: "Piano Nutrizionale Personalizzato",
-      description: "Dieta creata dalla nostra dietologa nutrizionista certificata",
-      price: "€49.99",
-      features: ["Consulto 1-on-1", "Menu settimanali", "Lista spesa", "Follow-up mensile"],
-      badge: "Con Dietologa",
-      icon: Heart,
+      title: "Protocollo Intermedio",
+      description: "Programma completo con supporto personalizzato",
+      price: "€50",
+      features: ["6 settimane", "4 volte a settimana", "Consulenza dietologo 1-on-1", "Consulenza personal trainer 1-on-1", "Tracking progressi", "Supporto WhatsApp"],
+      badge: "Più Completo",
+      icon: Trophy,
       color: "secondary"
     },
     {
       id: 3,
-      title: "Scheda Definizione Estate",
-      description: "Programma mirato per ottenere un fisico definito in 8 settimane",
-      price: "€24.99",
-      features: ["8 settimane intensive", "Cardio HIIT", "Alimentazione inclusa", "App mobile"],
-      badge: "Limitato",
-      icon: Calendar,
+      title: "Protocollo Avanzato",
+      description: "Programma intensivo completamente personalizzato",
+      price: "€99",
+      features: ["12 settimane", "5 allenamenti a settimana", "Dieta personalizzata con dietologo", "Programma personalizzato con personal trainer", "Consulenze 1-on-1", "Tracking progressi", "Assistenza WhatsApp"],
+      badge: "Premium",
+      icon: Heart,
       color: "accent"
     }
   ];
