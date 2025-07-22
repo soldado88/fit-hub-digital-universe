@@ -25,7 +25,7 @@ export function BioSection() {
                   <User className="w-10 h-10 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Marco Fitness</h3>
+                  <h3 className="text-2xl font-bold">Buno Gigliotti</h3>
                   <p className="text-primary font-semibold">Personal Trainer Certificato</p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export function BioSection() {
                   <Stethoscope className="w-10 h-10 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Dott.ssa Giulia Nutrizione</h3>
+                  <h3 className="text-2xl font-bold">Dott.ssa Francesca Gigliotti</h3>
                   <p className="text-secondary font-semibold">Dietologa Nutrizionista</p>
                 </div>
               </div>
