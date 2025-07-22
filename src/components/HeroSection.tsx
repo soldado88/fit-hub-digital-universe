@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight, Star } from "lucide-react";
+import { QuestionnaireModal } from "@/components/QuestionnaireModal";
 import gymHero from "@/assets/gym-hero.jpg";
 
 export function HeroSection() {
+  const [isQuestionnaireOpen, setIsQuestionnaireOpen] = useState(false);
+
   return (
+    <>
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
@@ -41,7 +46,12 @@ export function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => setIsQuestionnaireOpen(true)}
+            >
               Inizia il Tuo Percorso
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -75,6 +85,12 @@ export function HeroSection() {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
+      </section>
+      
+      <QuestionnaireModal 
+        isOpen={isQuestionnaireOpen} 
+        onClose={() => setIsQuestionnaireOpen(false)} 
+      />
+    </>
   );
 }
