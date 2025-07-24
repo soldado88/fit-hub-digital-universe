@@ -26,22 +26,24 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto space-y-8 animate-slide-up">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 border border-white/20">
-            <Star className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-medium">Coach Online #1 in Italia</span>
+            <Star className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">Coaching online e in studio</span>
           </div>
           
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Il Tuo Coach
-            <span className="block bg-gradient-hero bg-clip-text text-transparent">
-              Fitness Online
+            ALLENATI CON SCIENZA,
+            <span className="block bg-gradient-primary bg-clip-text text-transparent">
+              MANGIA CON STRATEGIA,
+            </span>
+            <span className="block">
+              VIVI IN FORMA.
             </span>
           </h1>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Coaching personalizzato, consulenze 1-a-1 con personal trainer e dietologa qualificata. 
-            Raggiungi i tuoi obiettivi ovunque tu sia.
+            Allenamento personalizzato. Nutrizione scientifica. Supporto reale.
           </p>
           
           {/* CTA Buttons */}
@@ -52,12 +54,12 @@ export function HeroSection() {
               className="text-lg px-8 py-4"
               onClick={() => setIsQuestionnaireOpen(true)}
             >
-              Inizia il Tuo Percorso
+              Scopri i protocolli
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-white hover:text-black">
               <Play className="w-5 h-5 mr-2" />
-              Guarda il Video
+              Prenota una consulenza
             </Button>
           </div>
           

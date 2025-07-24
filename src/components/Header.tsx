@@ -8,22 +8,34 @@ export function Header() {
         <div className="flex items-center space-x-2">
           <Dumbbell className="w-8 h-8 text-primary" />
           <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            F&Bfisicalbuilding
+            VÈLOCE Studio
           </span>
         </div>
         
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6">
           <a href="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </a>
-          <a href="/schede-e-diete" className="text-foreground hover:text-primary transition-colors">
-            Schede & Diete
+          <a href="/chi-siamo" className="text-foreground hover:text-primary transition-colors">
+            Chi siamo
           </a>
-          <a href="/consulenze" className="text-foreground hover:text-primary transition-colors">
-            Consulenze
+          <a href="/protocolli" className="text-foreground hover:text-primary transition-colors">
+            Protocolli
           </a>
-          <a href="/prodotti" className="text-foreground hover:text-primary transition-colors">
-            Prodotti
+          <a href="/challenge" className="text-foreground hover:text-primary transition-colors">
+            The Challenge
+          </a>
+          <a href="/shop" className="text-foreground hover:text-primary transition-colors">
+            Shop
+          </a>
+          <a href="/blog" className="text-foreground hover:text-primary transition-colors">
+            Blog & News
+          </a>
+          <a href="/prenota" className="text-foreground hover:text-primary transition-colors">
+            Prenota
+          </a>
+          <a href="/contatti" className="text-foreground hover:text-primary transition-colors">
+            Contatti
           </a>
         </nav>
 
