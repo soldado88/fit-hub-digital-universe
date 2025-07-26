@@ -1,28 +1,14 @@
 import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
-import { BioSection } from "@/components/BioSection";
-import { ProtocolsSection } from "@/components/ProtocolsSection";
-import { ConsultationsSection } from "@/components/ConsultationsSection";
-import { ChallengeSection } from "@/components/ChallengeSection";
-import { BlogSection } from "@/components/BlogSection";
-import { ShopSection } from "@/components/ShopSection";
-import { SocialProofSection } from "@/components/SocialProofSection";
-import { ContactsSection } from "@/components/ContactsSection";
 import { Footer } from "@/components/Footer";
+import { HomePageHero } from "@/components/HomePageHero";
+import { HomePageMenu } from "@/components/HomePageMenu";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
-      <BioSection />
-      <ProtocolsSection />
-      <ConsultationsSection />
-      <ChallengeSection />
-      <BlogSection />
-      <ShopSection />
-      <SocialProofSection />
-      <ContactsSection />
+      <HomePageHero />
+      <HomePageMenu />
       <Footer />
     </div>
   );
