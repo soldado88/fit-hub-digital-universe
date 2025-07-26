@@ -49,9 +49,7 @@ export function ConsultationsSection() {
                   <div className="text-3xl font-bold text-primary mb-2">
                     {consultation.price}
                   </div>
-                  <p className="text-muted-foreground font-medium">
-                    con {consultation.professional}
-                  </p>
+                  
                 </CardHeader>
 
                 <CardContent className="space-y-4">
@@ -60,10 +58,7 @@ export function ConsultationsSection() {
                   </p>
                   
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                      <Clock className="w-4 h-4" />
-                      <span>Durata: {consultation.duration}</span>
-                    </div>
+                    
                     <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4" />
                       <span>Modalità: {consultation.modality}</span>
