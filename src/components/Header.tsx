@@ -22,7 +22,7 @@ export function Header() {
           <a href="/shop" className="text-foreground hover:text-primary transition-colors">
             Shop
           </a>
-          <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog & N</a>
+          <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog </a>
           <a href="/prenota" className="text-foreground hover:text-primary transition-colors">
             Prenota
           </a>
