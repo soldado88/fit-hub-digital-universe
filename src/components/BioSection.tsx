@@ -69,11 +69,11 @@ export function BioSection() {
               </div>
               
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Laureata in Biologia della nutrizione. Specializzata in diete personalizzate, 
-                  educazione alimentare, sport e salute. Approccio scientifico per risultati 
-                  duraturi e sostenibili.
-                </p>
+                <p>laureata in Biologia Cellulare
+e Molecolare all'Università di Torino. In seguito ho conseguito un Master di
+Il livello in Nutrizione Clinica e un Master in Medicina della Riproduzione presso la Facoltà di
+Medicina e Chirurgia di Torino. Partecipo costantemente a convegni e workshop per essere sempre aggiornata e fornire ai miei pazienti
+consulenze efficaci e innovative.</p>
                 <p>
                   Creo piani alimentari che rispettano le tue esigenze nutrizionali 
                   e si integrano perfettamente con il tuo stile di vita e obiettivi.
