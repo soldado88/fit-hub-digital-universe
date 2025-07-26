@@ -29,14 +29,14 @@ export function ContactsSection() {
     handle: "VÈLOCE Studio"
   }];
   const studioHours = [{
-    day: "Lunedì - Venerdì",
-    hours: "7:00 - 21:00"
+    day: "Martedì",
+    hours: "14:00 - 20:00"
+  }, {
+    day: "Giovedì",
+    hours: "14:00 - 20:00"
   }, {
     day: "Sabato",
-    hours: "8:00 - 19:00"
-  }, {
-    day: "Domenica",
-    hours: "9:00 - 18:00"
+    hours: "9:00 - 20:00"
   }];
   return <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
@@ -91,7 +91,7 @@ export function ContactsSection() {
             </CardHeader>
             <CardContent className="space-y-4">
               {studioHours.map((schedule, index) => <div key={index} className="flex justify-between items-center">
-                  
+                  <span className="text-muted-foreground">{schedule.day}</span>
                   <span className="font-semibold text-foreground">{schedule.hours}</span>
                 </div>)}
             </CardContent>
