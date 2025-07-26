@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Heart, Calendar, MapPin } from "lucide-react";
-import brunoPhoto from "@/assets/bruno-gigliotti.jpg";
+
 import francescaPhoto from "@/assets/francesca-gigliotti.jpg";
 export function BioSection() {
   return <section className="py-20 bg-muted/20">
@@ -22,7 +22,7 @@ export function BioSection() {
             <CardContent className="p-0">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden">
-                  <img src={brunoPhoto} alt="Bruno Gigliotti" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/9cd50a0d-4d1f-4bd9-9c67-309ccd9637c6.png" alt="Bruno Gigliotti" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Bruno Gigliotti</h3>
