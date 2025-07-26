@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { User, Stethoscope, Award, Heart, Calendar, MapPin } from "lucide-react";
+import { Award, Heart, Calendar, MapPin } from "lucide-react";
+import brunoPhoto from "@/assets/bruno-gigliotti.jpg";
+import francescaPhoto from "@/assets/francesca-gigliotti.jpg";
 export function BioSection() {
   return <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
@@ -19,8 +21,8 @@ export function BioSection() {
           <Card className="p-8 hover:shadow-card transition-all duration-300">
             <CardContent className="p-0">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center">
-                  <User className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 rounded-full overflow-hidden">
+                  <img src={brunoPhoto} alt="Bruno Gigliotti" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Bruno Gigliotti</h3>
@@ -57,8 +59,8 @@ export function BioSection() {
           <Card className="p-8 hover:shadow-card transition-all duration-300">
             <CardContent className="p-0">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center">
-                  <Stethoscope className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 rounded-full overflow-hidden">
+                  <img src={francescaPhoto} alt="Dott.ssa Francesca Gigliotti" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Dott.ssa Francesca Gigliotti</h3>
