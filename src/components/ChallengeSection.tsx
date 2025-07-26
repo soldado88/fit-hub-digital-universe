@@ -2,43 +2,43 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Flame, Dumbbell, Calendar, Users, MessageCircle, Trophy } from "lucide-react";
-
 export function ChallengeSection() {
-  const challenges = [
-    {
-      name: "THE CHALLENGE SLIM",
-      emoji: "🔥",
-      description: "Dimagrimento rapido",
-      icon: Flame,
-      color: "text-red-500"
-    },
-    {
-      name: "THE CHALLENGE BUILD", 
-      emoji: "💪",
-      description: "Tonificazione intensa",
-      icon: Dumbbell,
-      color: "text-blue-500"
-    }
-  ];
-
-  const includes = [
-    { icon: Calendar, text: "Allenamenti giornalieri" },
-    { icon: Users, text: "Piano alimentare" },
-    { icon: MessageCircle, text: "Gruppo motivazionale" },
-    { icon: MessageCircle, text: "Supporto WhatsApp" },
-    { icon: Trophy, text: "Premio finale (opzionale)" }
-  ];
-
-  return (
-    <section className="py-20 bg-background">
+  const challenges = [{
+    name: "THE CHALLENGE SLIM",
+    emoji: "🔥",
+    description: "Dimagrimento rapido",
+    icon: Flame,
+    color: "text-red-500"
+  }, {
+    name: "THE CHALLENGE BUILD",
+    emoji: "💪",
+    description: "Tonificazione intensa",
+    icon: Dumbbell,
+    color: "text-blue-500"
+  }];
+  const includes = [{
+    icon: Calendar,
+    text: "Allenamenti giornalieri"
+  }, {
+    icon: Users,
+    text: "Piano alimentare"
+  }, {
+    icon: MessageCircle,
+    text: "Gruppo motivazionale"
+  }, {
+    icon: MessageCircle,
+    text: "Supporto WhatsApp"
+  }, {
+    icon: Trophy,
+    text: "Premio finale (opzionale)"
+  }];
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary/20">
             The Challenge
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Sfida 30 Giorni
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Challenge 30 Giorni</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Trasforma il tuo corpo in 30 giorni con la nostra sfida intensiva. 
             Due percorsi dedicati per obiettivi specifici.
@@ -47,12 +47,8 @@ export function ChallengeSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {challenges.map((challenge, index) => {
-            const IconComponent = challenge.icon;
-            return (
-              <Card 
-                key={index}
-                className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-all duration-300 text-center"
-              >
+          const IconComponent = challenge.icon;
+          return <Card key={index} className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-all duration-300 text-center">
                 <CardHeader className="pb-4">
                   <div className="text-6xl mb-4">{challenge.emoji}</div>
                   <CardTitle className="text-2xl font-bold text-foreground">
@@ -62,9 +58,8 @@ export function ChallengeSection() {
                     {challenge.description}
                   </p>
                 </CardHeader>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -85,14 +80,12 @@ export function ChallengeSection() {
                 </h4>
                 <ul className="space-y-3">
                   {includes.map((item, index) => {
-                    const IconComponent = item.icon;
-                    return (
-                      <li key={index} className="flex items-center space-x-3">
+                  const IconComponent = item.icon;
+                  return <li key={index} className="flex items-center space-x-3">
                         <IconComponent className="w-5 h-5 text-primary" />
                         <span className="text-muted-foreground">{item.text}</span>
-                      </li>
-                    );
-                  })}
+                      </li>;
+                })}
                 </ul>
               </div>
 
@@ -120,6 +113,5 @@ export function ChallengeSection() {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }

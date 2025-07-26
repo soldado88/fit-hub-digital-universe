@@ -1,10 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Stethoscope, Award, Heart, Calendar, MapPin } from "lucide-react";
-
 export function BioSection() {
-  return (
-    <section className="py-20 bg-muted/20">
+  return <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Il Nostro Team</Badge>
@@ -25,7 +23,7 @@ export function BioSection() {
                   <User className="w-10 h-10 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Luca</h3>
+                  <h3 className="text-2xl font-bold">Bruno Gigliotti</h3>
                   <p className="text-primary font-semibold">Personal Trainer Certificato</p>
                 </div>
               </div>
@@ -63,7 +61,7 @@ export function BioSection() {
                   <Stethoscope className="w-10 h-10 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Dott.ssa Martina</h3>
+                  <h3 className="text-2xl font-bold">Dott.ssa Francesca Gigliotti</h3>
                   <p className="text-secondary font-semibold">Dietologa Biologa</p>
                 </div>
               </div>
@@ -119,6 +117,5 @@ export function BioSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }

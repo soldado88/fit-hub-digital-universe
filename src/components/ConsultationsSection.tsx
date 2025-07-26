@@ -2,41 +2,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, GraduationCap, Clock, MapPin } from "lucide-react";
-
 export function ConsultationsSection() {
-  const consultations = [
-    {
-      title: "Consulenza con Personal Trainer",
-      price: "€34,99",
-      professional: "Luca",
-      icon: User,
-      description: "Analisi completa del tuo stato fisico, definizione obiettivi e creazione piano allenamento personalizzato.",
-      duration: "60 minuti",
-      modality: "Online o in studio",
-      color: "primary"
-    },
-    {
-      title: "Consulenza con Dietologa", 
-      price: "€49,99",
-      professional: "Dott.ssa Martina",
-      icon: GraduationCap,
-      description: "Valutazione nutrizionale completa, piano alimentare personalizzato e educazione alimentare.",
-      duration: "90 minuti", 
-      modality: "Online o in studio",
-      color: "secondary"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-muted/20">
+  const consultations = [{
+    title: "Consulenza con Personal Trainer",
+    price: "€34,99",
+    professional: "Luca",
+    icon: User,
+    description: "Analisi completa del tuo stato fisico, definizione obiettivi e creazione piano allenamento personalizzato.",
+    duration: "60 minuti",
+    modality: "Online o in studio",
+    color: "primary"
+  }, {
+    title: "Consulenza con Dietologa",
+    price: "€49,99",
+    professional: "Dott.ssa Martina",
+    icon: GraduationCap,
+    description: "Valutazione nutrizionale completa, piano alimentare personalizzato e educazione alimentare.",
+    duration: "90 minuti",
+    modality: "Online o in studio",
+    color: "secondary"
+  }];
+  return <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
             Consulenze Private
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Prenotazione Online
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Consulenza Online</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Prenota la tua consulenza privata tramite calendario integrato. 
             Ricevi conferma via email e WhatsApp.
@@ -45,12 +37,8 @@ export function ConsultationsSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {consultations.map((consultation, index) => {
-            const IconComponent = consultation.icon;
-            return (
-              <Card 
-                key={index}
-                className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-all duration-300"
-              >
+          const IconComponent = consultation.icon;
+          return <Card key={index} className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-all duration-300">
                 <CardHeader className="pb-4">
                   <div className={`w-16 h-16 bg-${consultation.color}/20 rounded-full flex items-center justify-center mb-4`}>
                     <IconComponent className={`w-8 h-8 text-${consultation.color}`} />
@@ -87,9 +75,8 @@ export function ConsultationsSection() {
                     Prenota ora
                   </Button>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         <div className="text-center">
@@ -103,6 +90,5 @@ export function ConsultationsSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
