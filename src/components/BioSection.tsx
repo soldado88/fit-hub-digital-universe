@@ -60,7 +60,7 @@ export function BioSection() {
             <CardContent className="p-0">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden">
-                  <img src={francescaPhoto} alt="Dott.ssa Francesca Gigliotti" className="w-full h-full object-cover" />
+                  <img src="/lovable-uploads/f8deb0bc-b19a-4641-a0f9-ada6f2d813b4.png" alt="Dott.ssa Francesca Gigliotti" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Dott.ssa Francesca Gigliotti</h3>
