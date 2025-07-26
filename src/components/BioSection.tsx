@@ -31,11 +31,9 @@ export function BioSection() {
               </div>
               
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  +10 anni di esperienza nel settore fitness. Specializzato in body recomposition, 
-                  dimagrimento, ipertrofia. Personal trainer certificato con metodi scientifici 
-                  e risultati garantiti.
-                </p>
+                <p>Personal trainer con oltre 10 anni di esperienza, specializzato in ricomposizione corporea e preparazione atletica. Attualmente ricopro il ruolo di primo preparatore atletico in uno staff tecnico calcistico, con 2 anni di esperienza diretta nel settore. Ho un background solido nel mondo del fitness e della palestra, maturato in più di 8 anni di attività sul campo.
+
+Vanto una carriera sportiva di 15 anni nell’atletica leggera, con partecipazioni a competizioni di livello internazionale, che mi ha permesso di sviluppare una profonda conoscenza del corpo umano e delle sue potenzialità. Ho inoltre maturato un anno di esperienza professionale nel settore fitness a Londra, ampliando le mie competenze in un contesto internazionale.</p>
                 <p>
                   Il mio approccio combina scienza e pratica per creare programmi che 
                   trasformano il corpo e lo stile di vita in modo duraturo.
