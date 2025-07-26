@@ -1,44 +1,51 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Mail, Phone, Instagram, Facebook, Clock, MessageCircle } from "lucide-react";
+import { 
+  MapPin, 
+  Mail, 
+  Phone, 
+  Instagram, 
+  Facebook, 
+  Clock,
+  MessageCircle
+} from "lucide-react";
+
 export function ContactsSection() {
-  const contactInfo = [{
-    icon: MapPin,
-    label: "Sede Fisica",
-    value: "Via Fitness 123, Milano",
-    subtext: "Studio privato con attrezzature professionali"
-  }, {
-    icon: Mail,
-    label: "Email",
-    value: "info@velocestudio.it",
-    subtext: "Rispondiamo entro 24 ore"
-  }, {
-    icon: Phone,
-    label: "WhatsApp",
-    value: "+39 123 456 7890",
-    subtext: "Supporto clienti H24"
-  }];
-  const socialLinks = [{
-    icon: Instagram,
-    name: "Instagram",
-    handle: "@velocestudio"
-  }, {
-    icon: Facebook,
-    name: "Facebook",
-    handle: "VÈLOCE Studio"
-  }];
-  const studioHours = [{
-    day: "Martedì",
-    hours: "14:00 - 20:00"
-  }, {
-    day: "Giovedì",
-    hours: "14:00 - 20:00"
-  }, {
-    day: "Sabato",
-    hours: "9:00 - 20:00"
-  }];
-  return <section className="py-20 bg-muted/20">
+  const contactInfo = [
+    {
+      icon: MapPin,
+      label: "Sede Fisica",
+      value: "Via Fitness 123, Milano",
+      subtext: "Studio privato con attrezzature professionali"
+    },
+    {
+      icon: Mail,
+      label: "Email",
+      value: "info@velocestudio.it",
+      subtext: "Rispondiamo entro 24 ore"
+    },
+    {
+      icon: Phone,
+      label: "WhatsApp",
+      value: "+39 123 456 7890",
+      subtext: "Supporto clienti H24"
+    }
+  ];
+
+  const socialLinks = [
+    { icon: Instagram, name: "Instagram", handle: "@velocestudio" },
+    { icon: Facebook, name: "Facebook", handle: "VÈLOCE Studio" }
+  ];
+
+  const studioHours = [
+    { day: "Lunedì - Venerdì", hours: "7:00 - 21:00" },
+    { day: "Sabato", hours: "8:00 - 19:00" },
+    { day: "Domenica", hours: "9:00 - 18:00" }
+  ];
+
+  return (
+    <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
@@ -56,8 +63,9 @@ export function ContactsSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Contact Information */}
           {contactInfo.map((contact, index) => {
-          const IconComponent = contact.icon;
-          return <Card key={index} className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-colors">
+            const IconComponent = contact.icon;
+            return (
+              <Card key={index} className="p-6 bg-card/50 backdrop-blur border-border/50 hover:bg-card/70 transition-colors">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-primary" />
@@ -74,8 +82,9 @@ export function ContactsSection() {
                     {contact.subtext}
                   </div>
                 </CardContent>
-              </Card>;
-        })}
+              </Card>
+            );
+          })}
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -90,10 +99,12 @@ export function ContactsSection() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {studioHours.map((schedule, index) => <div key={index} className="flex justify-between items-center">
+              {studioHours.map((schedule, index) => (
+                <div key={index} className="flex justify-between items-center">
                   <span className="text-muted-foreground">{schedule.day}</span>
                   <span className="font-semibold text-foreground">{schedule.hours}</span>
-                </div>)}
+                </div>
+              ))}
             </CardContent>
           </Card>
 
@@ -109,15 +120,17 @@ export function ContactsSection() {
             </CardHeader>
             <CardContent className="space-y-4">
               {socialLinks.map((social, index) => {
-              const IconComponent = social.icon;
-              return <div key={index} className="flex items-center justify-between p-3 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors cursor-pointer">
+                const IconComponent = social.icon;
+                return (
+                  <div key={index} className="flex items-center justify-between p-3 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors cursor-pointer">
                     <div className="flex items-center space-x-3">
                       <IconComponent className="w-5 h-5 text-primary" />
                       <span className="font-medium text-foreground">{social.name}</span>
                     </div>
                     <span className="text-muted-foreground text-sm">{social.handle}</span>
-                  </div>;
-            })}
+                  </div>
+                );
+              })}
             </CardContent>
           </Card>
         </div>
@@ -134,5 +147,6 @@ export function ContactsSection() {
           </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }

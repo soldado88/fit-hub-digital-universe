@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Dumbbell, User, ShoppingBag } from "lucide-react";
+import { User, ShoppingBag } from "lucide-react";
 export function Header() {
   return <header className="bg-background/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <Dumbbell className="w-8 h-8 text-primary" />
-          <span className="font-bold bg-gradient-primary bg-clip-text text-base text-green-500">
-            VÈLOCE Studio
+          <img src="/lovable-uploads/7de606fb-2965-43b6-9a53-12ad3b87dae4.png" alt="TimeToUp Logo" className="w-8 h-8" />
+          <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            TimeToUp
           </span>
         </div>
         
