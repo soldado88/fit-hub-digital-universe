@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Dumbbell, User, ShoppingBag } from "lucide-react";
-
 export function Header() {
-  return (
-    <header className="bg-background/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
+  return <header className="bg-background/80 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Dumbbell className="w-8 h-8 text-primary" />
@@ -16,21 +14,15 @@ export function Header() {
           <a href="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </a>
-          <a href="/chi-siamo" className="text-foreground hover:text-primary transition-colors">
-            Chi siamo
-          </a>
+          <a href="/chi-siamo" className="text-foreground hover:text-primary transition-colors">Bio</a>
           <a href="/protocolli" className="text-foreground hover:text-primary transition-colors">
             Protocolli
           </a>
-          <a href="/challenge" className="text-foreground hover:text-primary transition-colors">
-            The Challenge
-          </a>
+          <a href="/challenge" className="text-foreground hover:text-primary transition-colors"> Challenge</a>
           <a href="/shop" className="text-foreground hover:text-primary transition-colors">
             Shop
           </a>
-          <a href="/blog" className="text-foreground hover:text-primary transition-colors">
-            Blog & News
-          </a>
+          <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog & N</a>
           <a href="/prenota" className="text-foreground hover:text-primary transition-colors">
             Prenota
           </a>
@@ -52,6 +44,5 @@ export function Header() {
           </Button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 }
