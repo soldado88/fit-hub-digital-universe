@@ -3,18 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Play, ArrowRight, Star } from "lucide-react";
 import { QuestionnaireModal } from "@/components/QuestionnaireModal";
 import gymHero from "@/assets/gym-hero.jpg";
-
 export function HeroSection() {
   const [isQuestionnaireOpen, setIsQuestionnaireOpen] = useState(false);
-
-  return (
-    <>
+  return <>
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${gymHero})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${gymHero})`
+      }}>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
@@ -48,12 +44,7 @@ export function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="text-lg px-8 py-4"
-              onClick={() => setIsQuestionnaireOpen(true)}
-            >
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => setIsQuestionnaireOpen(true)}>
               Scopri i protocolli
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -66,7 +57,7 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary">200+</div>
+              <div className="text-4xl font-bold text-primary">+100</div>
               <div className="text-white/80 mt-2">Clienti Online</div>
             </div>
             <div className="text-center">
@@ -89,10 +80,6 @@ export function HeroSection() {
       </div>
       </section>
       
-      <QuestionnaireModal 
-        isOpen={isQuestionnaireOpen} 
-        onClose={() => setIsQuestionnaireOpen(false)} 
-      />
-    </>
-  );
+      <QuestionnaireModal isOpen={isQuestionnaireOpen} onClose={() => setIsQuestionnaireOpen(false)} />
+    </>;
 }
